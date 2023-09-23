@@ -13,6 +13,20 @@ public class ArrayListEx {
 	    for (String carsList: cars) {
 		System.out.println(carsList);
 	    }
+        cars.add(1, "Ford");
+	    cars.remove(2);
+	    
+	    int mbIndex = cars.indexOf("BMW");
+	    if (mbIndex != -1)  {
+	    	cars.set(mbIndex, "Audi");
+	    	}  	
+	    System.out.println("MODIFIED LIST");
+	    for (String carsList: cars) {
+			System.out.println(carsList);
+		    }
+	    
+
+    
     }
 
 }
