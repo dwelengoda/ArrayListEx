@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListEx {
 
@@ -24,9 +25,13 @@ public class ArrayListEx {
 	    for (String carsList: cars) {
 			System.out.println(carsList);
 		    }
-	    
 
-    
+         System.out.println("SORTED LIST");
+	  Collections.sort(cars);
+	  
+	  for (String carsList: cars) {
+			System.out.println(carsList);
+		    }
     }
 
 }
